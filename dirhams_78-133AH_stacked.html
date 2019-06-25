@@ -42,7 +42,7 @@ d3.csv("data/coinsByProvince_78-133.csv", function(data) {
   //////////
   // Add X axis
   var x = d3.scaleLinear()
-    .domain(d3.extent(data, function(d) { return d.year; }))
+    .domain([ 78, 133 ])
     .range([ 0, width ]);
   var xAxis = svg.append("g")
     .attr("transform", "translate(0," + height + ")")
