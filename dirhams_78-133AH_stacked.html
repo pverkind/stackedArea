@@ -27,7 +27,8 @@ d3.csv("data/coinsByProvince_78-133.csv", function(data) {
   // GENERAL //
   //////////
   // List of groups = header of the csv files
-  var keys = data.columns.slice(1)
+  var keys = data.columns.slice(1);
+  console.log(keys);
   // color palette
   var color = d3.scaleOrdinal()
     .domain(keys)
