@@ -51,17 +51,17 @@ d3.csv("data/coinsByProvince_78-133.csv", function(data) {
       .attr("text-anchor", "end")
       .attr("x", width)
       .attr("y", height+40 )
-      .text("Time (year)");
+      .text("Year AH");
   // Add Y axis label:
   svg.append("text")
       .attr("text-anchor", "end")
       .attr("x", 0)
       .attr("y", -20 )
-      .text("# of baby born")
+      .text("# of dirhams in corpus")
       .attr("text-anchor", "start")
   // Add Y axis
   var y = d3.scaleLinear()
-    .domain([0, 200000])
+    .domain([0, 800])
     .range([ height, 0 ]);
   svg.append("g")
     .call(d3.axisLeft(y).ticks(5))
